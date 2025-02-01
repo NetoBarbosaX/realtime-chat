@@ -1,7 +1,10 @@
 # Realtime Chat API - Node.js, Express, Prisma e Socket.io
 
-Bem-vindo ao Realtime Chat API, um projeto criado para demonstrar como construir e estruturar uma aplicação Node.js que utiliza Express, Prisma (ORM), WebSockets (via Socket.io) e um banco de dados relacional.
-O objetivo principal é explanar (de forma clara e didática) como integrar comunicação em tempo real (chat/salas/mensagens) a uma API, além de mostrar boas práticas de organização de pastas e código.
+Bem-vindo à demonstração prática de uma aplicação de chat em tempo real, onde exploramos a integração perfeita entre WebSockets e uma API REST moderna. Este projeto serve como um guia hands-on para desenvolvedores que desejam compreender a implementação de comunicação bidirecional em suas aplicações Node.js.
+
+Através de uma arquitetura robusta e bem organizada, demonstramos como o Socket.io trabalha em harmonia com Express e Prisma para criar uma experiência de chat fluida e responsiva. A aplicação permite que usuários troquem mensagens instantaneamente em diferentes salas de chat, ilustrando conceitos essenciais como conexões persistentes, broadcasts e gerenciamento de eventos em tempo real.
+
+Além da comunicação em tempo real, o projeto apresenta uma estrutura de código limpo e modular, facilitando não apenas o entendimento dos conceitos, mas também sua aplicação em projetos reais. Utilizamos as melhores práticas de desenvolvimento, incluindo separação de responsabilidades, gerenciamento eficiente de banco de dados com Prisma e uma arquitetura escalável pronta para crescer junto com suas necessidades.
 
 ## Índice
 
@@ -49,6 +52,7 @@ Cada mensagem está vinculada a um usuário e a uma sala. O objetivo é demonstr
 
 ## Estrutura de Pastas
 
+```
 realtime-chat
 ├── prisma
 │   ├── migrations/
@@ -56,7 +60,6 @@ realtime-chat
 │   ├── src
 │   │   ├── config
 │   │   │   ├── env.js
-
 │   │   │   └── index.js
 │   │   ├── database
 │   │   │   ├── index.js
@@ -98,6 +101,7 @@ realtime-chat
 │   └── docker-compose.yml
 ├── package.json
 └── README.md
+```
 
 ## Configuração do Ambiente
 
