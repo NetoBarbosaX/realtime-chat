@@ -11,10 +11,10 @@ async function postMessage(req, res) {
 
 }
 
-async function getUserMessages(req, res) {
+async function getRoomMessages(req, res) {
   try {
-    const { userId } = req.params;
-    const messages = await chatService.getMessagesByUser(userId);
+    const { roomId } = req.params;
+    const messages = await chatService.getMessagesByRoom(roomId);
     return res.json(messages);
   } catch (error) {
     return res.status(500).json({ error: 'Error fetching messages' });
@@ -23,5 +23,5 @@ async function getUserMessages(req, res) {
 
 module.exports = {
   postMessage,
-  getUserMessages,
+  getRoomMessages,
 };
